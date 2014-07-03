@@ -1,33 +1,33 @@
-[10:50:43] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
-[10:50:43] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
-[10:50:43] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
-[10:50:43] [main/INFO]: Forge Mod Loader version 7.2.137.1049 for Minecraft 1.7.2 loading
-[10:50:43] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.6.0_65, running on Mac OS X:x86_64:10.9.3, installed at /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-[10:50:43] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[10:50:43] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[10:50:43] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[10:50:43] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[10:50:43] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[10:50:43] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[10:50:43] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[10:50:44] [main/ERROR]: The minecraft jar file:/Users/teen/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.0.1049/forgeSrc-1.7.2-10.12.0.1049.jar!/net/minecraft/client/ClientBrandRetriever.class appears to be corrupt! There has been CRITICAL TAMPERING WITH MINECRAFT, it is highly unlikely minecraft will work! STOP NOW, get a clean copy and try again!
-[10:50:44] [main/ERROR]: FML has been ordered to ignore the invalid or missing minecraft certificate. This is very likely to cause a problem!
-[10:50:44] [main/ERROR]: Technical information: ClientBrandRetriever was at jar:file:/Users/teen/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.0.1049/forgeSrc-1.7.2-10.12.0.1049.jar!/net/minecraft/client/ClientBrandRetriever.class, there were 0 certificates for it
-[10:50:44] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
-[10:50:44] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[10:50:44] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[10:50:44] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[10:50:45] [main/INFO]: Setting user: Player617
-[10:50:46] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:50:46] [Client thread/INFO]: Attempting early MinecraftForge initialization
-[10:50:46] [Client thread/INFO]: MinecraftForge v10.12.0.1049 Initialized
-[10:50:46] [Client thread/INFO]: Replaced 141 ore recipies
-[10:50:46] [Client thread/INFO]: Completed early MinecraftForge initialization
-[10:50:46] [Client thread/INFO]: Searching /Users/teen/Desktop/EllaYoung_Modding/eclipse/mods for mods
-[10:50:46] [Client thread/INFO]: Mod DMA Example is missing the required element 'name'. Substituting DMA Example
-[10:50:47] [Client thread/ERROR]: FML has detected a mod that is using a package name based on 'net.minecraft.src' : net.minecraft.src.FMLRenderAccessLibrary. This is generally a severe programming error.  There should be no mod code in the minecraft namespace. MOVE YOUR MOD! If you're in eclipse, select your source code and 'refactor' it into a new package. Go on. DO IT NOW!
-[10:50:48] [Client thread/INFO]: Forge Mod Loader has identified 5 mods to load
-[10:50:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EllasMod, FMLFileResourcePack:DMA Example
-[10:50:48] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
-[10:50:48] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
-[10:50:49] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[10:54:46] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[10:54:46] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[10:54:46] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[10:54:46] [main/INFO]: Forge Mod Loader version 7.2.137.1049 for Minecraft 1.7.2 loading
+[10:54:46] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.6.0_65, running on Mac OS X:x86_64:10.9.3, installed at /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+[10:54:46] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[10:54:46] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:54:46] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[10:54:46] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:54:46] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:54:46] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:54:46] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[10:54:47] [main/ERROR]: The minecraft jar file:/Users/teen/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.0.1049/forgeSrc-1.7.2-10.12.0.1049.jar!/net/minecraft/client/ClientBrandRetriever.class appears to be corrupt! There has been CRITICAL TAMPERING WITH MINECRAFT, it is highly unlikely minecraft will work! STOP NOW, get a clean copy and try again!
+[10:54:47] [main/ERROR]: FML has been ordered to ignore the invalid or missing minecraft certificate. This is very likely to cause a problem!
+[10:54:47] [main/ERROR]: Technical information: ClientBrandRetriever was at jar:file:/Users/teen/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.0.1049/forgeSrc-1.7.2-10.12.0.1049.jar!/net/minecraft/client/ClientBrandRetriever.class, there were 0 certificates for it
+[10:54:47] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[10:54:47] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:54:47] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[10:54:47] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[10:54:48] [main/INFO]: Setting user: Player669
+[10:54:49] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:54:49] [Client thread/INFO]: Attempting early MinecraftForge initialization
+[10:54:49] [Client thread/INFO]: MinecraftForge v10.12.0.1049 Initialized
+[10:54:49] [Client thread/INFO]: Replaced 141 ore recipies
+[10:54:49] [Client thread/INFO]: Completed early MinecraftForge initialization
+[10:54:49] [Client thread/INFO]: Searching /Users/teen/Desktop/EllaYoung_Modding/eclipse/mods for mods
+[10:54:49] [Client thread/INFO]: Mod DMA Example is missing the required element 'name'. Substituting DMA Example
+[10:54:50] [Client thread/ERROR]: FML has detected a mod that is using a package name based on 'net.minecraft.src' : net.minecraft.src.FMLRenderAccessLibrary. This is generally a severe programming error.  There should be no mod code in the minecraft namespace. MOVE YOUR MOD! If you're in eclipse, select your source code and 'refactor' it into a new package. Go on. DO IT NOW!
+[10:54:51] [Client thread/INFO]: Forge Mod Loader has identified 5 mods to load
+[10:54:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EllasMod, FMLFileResourcePack:DMA Example
+[10:54:51] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
+[10:54:51] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
+[10:54:52] [Client thread/INFO]: Configured a dormant chunk cache size of 0

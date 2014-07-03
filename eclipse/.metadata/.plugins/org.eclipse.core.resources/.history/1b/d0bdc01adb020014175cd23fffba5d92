@@ -147,9 +147,8 @@ public static void MyRecipes(){
 	GameRegistry.addShapelessRecipe (cookiesncream, snow, milk, sugar, cookieb);
 	
 	GameRegistry.addRecipe(new ItemStack(strawBerryBlock), new Object[] { 
-		"SSS",
-		"SSS",
-		"SSS",
+		"SS ",
+		"SS ",
 		'S', Strawberry,
 	});
 	
