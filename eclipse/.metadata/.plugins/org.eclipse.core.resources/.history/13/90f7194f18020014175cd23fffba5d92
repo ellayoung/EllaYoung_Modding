@@ -1,0 +1,15 @@
+package ella.young.MyItems;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.ItemFood;
+
+public class ChocolateIceCream  extends ItemFood{
+	
+	public ChocolateIceCream(int i, int j, boolean b) {
+		super(j,b);
+		setUnlocalizedName("chocolateicecream");
+	}
+
+}

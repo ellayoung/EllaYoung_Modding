@@ -1,0 +1,19 @@
+package ella.young.MyBlocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+
+public class StrawBerryBlock extends Block 
+	{
+
+	        public StrawBerryBlock (Material material) 
+	        {
+	        	
+	                super(material);
+	                
+	                
+	        }
+
+	}

@@ -1,0 +1,94 @@
+package ella.young;
+
+//Recipes
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.item.ItemStack;
+import net.minecraft.init.Items;
+import net.minecraft.init.Blocks;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraft.item.crafting.FurnaceRecipes;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+//MyBlocks Imports
+import java.util.List;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+//MyBlocks
+import ella.young.MyBlocks.RubyOre;
+import ella.young.MyBlocks.StrawBerry;
+
+public class MyCode {
+	
+	//List Blocks Here #setupBLOCK
+	public static Block rubyOre;
+	public static Block strawBerry;
+
+	public static void MyBlocks(){		
+		
+		//Blocks #setupBLOCK
+		//RubyOre
+			rubyOre = new RubyOre (Material.ground)
+			.setHardness(0.9F)
+			.setStepSound(Block.soundTypeGravel)
+			.setBlockName("rubyOre")
+			.setCreativeTab(CreativeTabs.tabBlock)
+			.setBlockTextureName("redstone_ore");
+			
+		//StrawBerry
+			strawBerry = new StrawBerry (Material.ground)
+			.setHardness(0.9F)
+			.setStepSound(Block.soundTypeGravel)
+			.setBlockName("strawBerry")
+			.setCreativeTab(CreativeTabs.tabBlock)
+			.setBlockTextureName("redstone_block");
+
+		//Harvest Level 
+
+		//Register #setupBLOCK
+		GameRegistry.registerBlock(rubyOre, "RubyOre");
+		GameRegistry.registerBlock(strawBerry, "StrawBerry");
+	}
+	public static void MyRecipes(){
+		GameRegistry.addShapelessRecipe( new ItemStack(Blocks.brown_mushroom), new Object[] {new ItemStack(Items.cookie)});
+		GameRegistry.addShapelessRecipe( new ItemStack(Items.emerald), new Object[] {new ItemStack(Blocks.dirt)});
+		ItemStack mosssycobblestone = new ItemStack(Blocks.mossy_cobblestone);
+		ItemStack cobblestone = new ItemStack(Blocks.cobblestone);
+		ItemStack grass = new ItemStack(Blocks.grass);
+		GameRegistry.addShapelessRecipe (mosssycobblestone, grass, cobblestone);
+
+		
+		GameRegistry.addRecipe(new ItemStack(Blocks.bedrock), new Object[] {
+			"SSS",
+			"ODO",
+			"EEE",
+			'S', Blocks.stone,
+			'O', Blocks.obsidian,
+			'D', Blocks.diamond_ore,
+			'E', Blocks.emerald_block, 
+		});	
+			GameRegistry.addSmelting(Items.cookie, new ItemStack(Items.cooked_beef,1), 0.01F);
+			GameRegistry.addSmelting(Items.feather, new ItemStack(Items.string,1), 0.01F);
+			GameRegistry.addSmelting(Blocks.soul_sand, new ItemStack(Blocks.netherrack, 1), 0.01F);
+			GameRegistry.addSmelting(Blocks.hardened_clay, new ItemStack(Blocks.brick_block, 1), 0.01F);
+		ItemStack newEnchantment = new ItemStack(Items.cooked_beef,1);
+		newEnchantment.addEnchantment(Enchantment.knockback, 127);
+		GameRegistry.addSmelting(Items.cookie,newEnchantment, 0.01F);
+		
+		ItemStack stick = new ItemStack(Items.stick,1);
+		stick.addEnchantment(Enchantment.knockback, 127);
+		GameRegistry.addSmelting(Blocks.brown_mushroom, stick, 0.01F);
+		
+	}
+
+	public static void MyItems(){
+		
+	}
+}
