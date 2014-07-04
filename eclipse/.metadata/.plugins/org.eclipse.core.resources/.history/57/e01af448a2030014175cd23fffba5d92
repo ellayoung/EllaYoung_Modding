@@ -175,7 +175,7 @@ public static void MyRecipes(){
 		"SSS",
 		"ODO",
 		"EEE",
-		'S', Blocks.stone,   
+		'S', Blocks.stone,  
 		'O', Blocks.obsidian,
 		'D', Blocks.diamond_ore,
 		'E', Blocks.emerald_block, 
