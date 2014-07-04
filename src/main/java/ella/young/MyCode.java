@@ -39,6 +39,7 @@ import ella.young.MyItems.CookiesnCream;
 //MyTools
 import net.minecraftforge.common.util.EnumHelper;
 import ella.young.MyItems.RubySword;
+import ella.young.MyItems.IceCreamSword;
 
 public class MyCode {
 	
@@ -60,6 +61,8 @@ public class MyCode {
 	//Tools
 	public static Item RubySword;
 	public static Item.ToolMaterial RUBY = EnumHelper.addToolMaterial("RUBY", 3, 800, 9.0F, 3.5F, 10);
+	public static Item IceCreamSword;
+	public static Item.ToolMaterial ICECREAM = EnumHelper.addToolMaterial("ICECREAM", 0, 32, 5.0F, 0.5F, 3);
 
 	
 	
@@ -67,15 +70,15 @@ public class MyCode {
 		
 		//Blocks #setupBLOCK
 		//RubyOre
-			/*rubyOre = new RubyOre (Material.ground)
+			 rubyOre = new RubyOre (Material.ground)
 			.setHardness(0.9F)
 			.setStepSound(Block.soundTypeGravel)
 			.setBlockName("rubyOre")
 			.setCreativeTab(CreativeTabs.tabBlock)
-			.setBlockTextureName("redstone_ore");*/
+			.setBlockTextureName("redstone_ore");
 			
 		//StrawBerry
-			strawBerryBlock = new StrawBerryBlock (Material.ground)
+			 strawBerryBlock = new StrawBerryBlock (Material.ground)
 			.setHardness(0.9F)
 			.setStepSound(Block.soundTypeWood)
 			.setBlockName("strawBerryBlock")
@@ -94,14 +97,15 @@ public class MyCode {
 		rubyGem = new RubyGem();
 		Strawberry = new Strawberry(5015, 10, false).setUnlocalizedName("Strawberry");
 		VanillaIceCream = new VanillaIceCream(5015, 10, true).setUnlocalizedName("vanillaicecream");
-		ChocolateIceCream = new ChocolateIceCream(5010, 10, false).setUnlocalizedName("chocolateicecream");
-		StrawberryIceCream = new StrawberryIceCream(5015, 10, false).setUnlocalizedName("strawberryicecream");
-		NeopolitanIceCream = new NeopolitanIceCream(5015,10,false).setUnlocalizedName("neopolitanicecream");
-		CookieBits = new CookieBits(5015, 10, false).setUnlocalizedName("cookiebits");
-		CookiesnCream = new CookiesnCream(5015, 10, false).setUnlocalizedName("cookiesncream");
+		ChocolateIceCream = new ChocolateIceCream(5010, 12, false).setUnlocalizedName("chocolateicecream");
+		StrawberryIceCream = new StrawberryIceCream(5015, 12, false).setUnlocalizedName("strawberryicecream");
+		NeopolitanIceCream = new NeopolitanIceCream(5015,14,false).setUnlocalizedName("neopolitanicecream");
+		CookieBits = new CookieBits(5015, 3, false).setUnlocalizedName("cookiebits");
+		CookiesnCream = new CookiesnCream(5015, 12, false).setUnlocalizedName("cookiesncream");
 		
-		//ruby sword
+		
 		RubySword = new RubySword(RUBY);
+		IceCreamSword = new IceCreamSword(ICECREAM);
 		
 		GameRegistry.registerItem(Strawberry, "Strawberry");		
 		GameRegistry.registerItem(rubyGem, "rubyGem");
@@ -112,16 +116,17 @@ public class MyCode {
 		GameRegistry.registerItem(NeopolitanIceCream, "neopolitanicecream");
 		GameRegistry.registerItem(CookieBits, "cookiebits");
 		GameRegistry.registerItem(CookiesnCream,"cookiesncream");
+		GameRegistry.registerItem(IceCreamSword,"icecreamsword");
 	}
 
 
 public static void MyRecipes(){
-	/*GameRegistry.addShapelessRecipe( new ItemStack(Blocks.brown_mushroom), new Object[] {new ItemStack(Items.cookie)});
+	GameRegistry.addShapelessRecipe( new ItemStack(Blocks.brown_mushroom), new Object[] {new ItemStack(Items.cookie)});
 	GameRegistry.addShapelessRecipe( new ItemStack(Items.emerald), new Object[] {new ItemStack(Blocks.dirt)});
 	ItemStack mosssycobblestone = new ItemStack(Blocks.mossy_cobblestone);
 	ItemStack cobblestone = new ItemStack(Blocks.cobblestone);
 	ItemStack grass = new ItemStack(Blocks.grass);
-	GameRegistry.addShapelessRecipe (mosssycobblestone, grass, cobblestone);*/
+	GameRegistry.addShapelessRecipe (mosssycobblestone, grass, cobblestone);
 	
 	
 	ItemStack sugar = new ItemStack(Items.sugar);
@@ -136,6 +141,7 @@ public static void MyRecipes(){
 	ItemStack cookieb = new ItemStack(CookieBits);
 	ItemStack cookie = new ItemStack(Items.cookie);
 	ItemStack cookiesncream = new ItemStack(CookiesnCream);
+	ItemStack icecreamsword = new ItemStack(IceCreamSword);
 	GameRegistry.addShapelessRecipe (vanillaicecream, snow, milk, sugar);
 	GameRegistry.addShapelessRecipe (chocolateicecream, snow, milk, sugar, cocoa);
 	GameRegistry.addShapelessRecipe (chocolateicecream, vanillaicecream, cocoa);
@@ -150,14 +156,26 @@ public static void MyRecipes(){
 		"SSS",
 		"SSS",
 		"SSS",
+		
 		'S', Strawberry,
 	});
+	GameRegistry.addRecipe(new ItemStack(IceCreamSword), new Object[]{
+		"  C",
+		" V ",
+		"ORS",
+		'C', ChocolateIceCream,
+		'V', VanillaIceCream,
+		'O', CookiesnCream,
+		'R', NeopolitanIceCream,
+		'S', StrawberryIceCream,
+	});
 	
-	/*GameRegistry.addRecipe(new ItemStack(Blocks.bedrock), new Object[] {
+	
+	GameRegistry.addRecipe(new ItemStack(Blocks.bedrock), new Object[] {
 		"SSS",
 		"ODO",
 		"EEE",
-		'S', Blocks.stone,
+		'S', Blocks.stone,  
 		'O', Blocks.obsidian,
 		'D', Blocks.diamond_ore,
 		'E', Blocks.emerald_block, 
@@ -172,6 +190,6 @@ public static void MyRecipes(){
 	
 	ItemStack stick = new ItemStack(Items.stick,1);
 	stick.addEnchantment(Enchantment.knockback, 127);
-	GameRegistry.addSmelting(Blocks.brown_mushroom, stick, 0.01F);*/
+	GameRegistry.addSmelting(Blocks.brown_mushroom, stick, 0.01F);
 }};
 	

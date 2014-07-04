@@ -1,0 +1,24 @@
+package ella.young.MyItems;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.ItemSword;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.util.IIcon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class IceCreamSword extends ItemSword {
+	
+	public IceCreamSword (ToolMaterial material) {
+		super(material);
+		setUnlocalizedName("icecreamsword");
+	}
+	@SideOnly(Side.CLIENT)
+	private IIcon[] icons;
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IIconRegister par1IconRegister)
+	{
+		this.itemIcon = par1IconRegister.registerIcon("ellasmod:" + (this.getUnlocalizedName().substring(5)));
+	}
+
+}
